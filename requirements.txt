@@ -1,0 +1,14 @@
+pandas
+numpy
+requests
+sqlalchemy
+sqlite3-binary; sys_platform == "win32"
+python-dotenv
+scikit-learn
+matplotlib
+plotly
+folium
+geopandas ; platform_system != "Windows"  # opcional si usas choropleth con shapes
+pyproj
+shapely
+streamlit

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e250e307cb13d0175d17b87a37621cb2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e250e307cb13d0175d17b87a37621cb2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e250e307cb13d0175d17b87a37621cb2 = L.map(
+                "map_e250e307cb13d0175d17b87a37621cb2",
+                {
+                    center: [9.9, -84.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2dfdc6883cfde3e175b7848dbef71ac7 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2dfdc6883cfde3e175b7848dbef71ac7.addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+            var circle_marker_49ba1245126e1022bda724792e8408b7 = L.circleMarker(
+                [10.016, -84.215],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.968794621608756, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_edc61df13cef78e979c92632a7ccd5ab = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_0793fccc534419fa9049e69e04cf58c7 = $(`<div id="html_0793fccc534419fa9049e69e04cf58c7" style="width: 100.0%; height: 100.0%;">Alajuela: 18783 accidentes</div>`)[0];
+                popup_edc61df13cef78e979c92632a7ccd5ab.setContent(html_0793fccc534419fa9049e69e04cf58c7);
+            
+        
+
+        circle_marker_49ba1245126e1022bda724792e8408b7.bindPopup(popup_edc61df13cef78e979c92632a7ccd5ab)
+        ;
+
+        
+    
+    
+            var circle_marker_529c83ff819068ae591fd9c5c67752d3 = L.circleMarker(
+                [9.864, -83.919],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.040278438838649, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_30f2ea39ff115f6f3207c77e6c83505d = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_13d9992c17ab9a659f53b7cf06f4890d = $(`<div id="html_13d9992c17ab9a659f53b7cf06f4890d" style="width: 100.0%; height: 100.0%;">Cartago: 8122 accidentes</div>`)[0];
+                popup_30f2ea39ff115f6f3207c77e6c83505d.setContent(html_13d9992c17ab9a659f53b7cf06f4890d);
+            
+        
+
+        circle_marker_529c83ff819068ae591fd9c5c67752d3.bindPopup(popup_30f2ea39ff115f6f3207c77e6c83505d)
+        ;
+
+        
+    
+    
+            var circle_marker_b4dd729a2b79434c93b83e6fd9b93f2c = L.circleMarker(
+                [10.635, -85.437],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3166646834840545, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_962e6a99c470a34cb0193a93d2bfdbf5 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_210faf2543a98d1654cd2d9e259f3194 = $(`<div id="html_210faf2543a98d1654cd2d9e259f3194" style="width: 100.0%; height: 100.0%;">Guanacaste: 7149 accidentes</div>`)[0];
+                popup_962e6a99c470a34cb0193a93d2bfdbf5.setContent(html_210faf2543a98d1654cd2d9e259f3194);
+            
+        
+
+        circle_marker_b4dd729a2b79434c93b83e6fd9b93f2c.bindPopup(popup_962e6a99c470a34cb0193a93d2bfdbf5)
+        ;
+
+        
+    
+    
+            var circle_marker_5ebec337ab3cb37a8eda69daab41208f = L.circleMarker(
+                [10.004, -84.116],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.922298905283199, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_26e517f84218c791e326ed466bdfb94c = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_998d130f3a45828891e8fff0a115619e = $(`<div id="html_998d130f3a45828891e8fff0a115619e" style="width: 100.0%; height: 100.0%;">Heredia: 9308 accidentes</div>`)[0];
+                popup_26e517f84218c791e326ed466bdfb94c.setContent(html_998d130f3a45828891e8fff0a115619e);
+            
+        
+
+        circle_marker_5ebec337ab3cb37a8eda69daab41208f.bindPopup(popup_26e517f84218c791e326ed466bdfb94c)
+        ;
+
+        
+    
+    
+            var circle_marker_3c9f1fedf25ecd25b94cb9d566da0880 = L.circleMarker(
+                [9.99, -83.033],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.424500237981913, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_77628184c1a58106fb13503161e0057e = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_640adaa1fb9d5eca9e6afa79909e9495 = $(`<div id="html_640adaa1fb9d5eca9e6afa79909e9495" style="width: 100.0%; height: 100.0%;">Limón: 7294 accidentes</div>`)[0];
+                popup_77628184c1a58106fb13503161e0057e.setContent(html_640adaa1fb9d5eca9e6afa79909e9495);
+            
+        
+
+        circle_marker_3c9f1fedf25ecd25b94cb9d566da0880.bindPopup(popup_77628184c1a58106fb13503161e0057e)
+        ;
+
+        
+    
+    
+            var circle_marker_31af71efbe20de833321aaac8137863f = L.circleMarker(
+                [9.976, -84.833],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5581568300809145, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_0388e21c30c62f9de5d5c1e87b2455df = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_61613381bc50ca0f93f6de21a3008bb3 = $(`<div id="html_61613381bc50ca0f93f6de21a3008bb3" style="width: 100.0%; height: 100.0%;">Puntarenas: 10163 accidentes</div>`)[0];
+                popup_0388e21c30c62f9de5d5c1e87b2455df.setContent(html_61613381bc50ca0f93f6de21a3008bb3);
+            
+        
+
+        circle_marker_31af71efbe20de833321aaac8137863f.bindPopup(popup_0388e21c30c62f9de5d5c1e87b2455df)
+        ;
+
+        
+    
+    
+            var circle_marker_f2e512452a81710f6210b3480bb6e71d = L.circleMarker(
+                [9.928, -84.09],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 3}
+            ).addTo(map_e250e307cb13d0175d17b87a37621cb2);
+        
+    
+        var popup_794e6db9f6d91830698033f084b0d944 = L.popup({
+  "maxWidth": 240,
+});
+
+        
+            
+                var html_840beb7151736f758755a1cb7649154b = $(`<div id="html_840beb7151736f758755a1cb7649154b" style="width: 100.0%; height: 100.0%;">San José: 33616 accidentes</div>`)[0];
+                popup_794e6db9f6d91830698033f084b0d944.setContent(html_840beb7151736f758755a1cb7649154b);
+            
+        
+
+        circle_marker_f2e512452a81710f6210b3480bb6e71d.bindPopup(popup_794e6db9f6d91830698033f084b0d944)
+        ;
+
+        
+    
+</script>
+</html>
