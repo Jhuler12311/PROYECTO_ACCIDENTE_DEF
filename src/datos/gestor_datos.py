@@ -38,6 +38,8 @@ class GestorDatos:
         - Convierte Hora a entero
         - Normaliza provincia y tipo de vía
         """
+        if "fecha" in df.columns:
+            df["dia_semana"] = df["fecha"].dt.weekday  # 0=lunes, 6=domingo
 
         # Normalizar nombres de columnas
         df.columns = df.columns.str.strip().str.lower()
@@ -102,7 +104,8 @@ class GestorDatos:
         columnas_relevantes = [
             "fecha", "hora", "provincia", "tipo_via",
             "clase de accidente", "tipo de accidente",
-            "estado del tiempo", "ruta", "kilómetro"
+            "estado del tiempo", "estado de la calzada",  # ✅ agregada
+            "ruta", "kilómetro"
         ]
         columnas_presentes = [c for c in columnas_relevantes if c in df.columns]
         df = df[columnas_presentes]
@@ -111,6 +114,7 @@ class GestorDatos:
         df = df[df["fecha"].notna() & df["provincia"].notna()]
 
         print(f"✅ Dataset limpio con {len(df)} registros y {len(df.columns)} columnas")
+        print("📌 Columnas finales después de limpiar:", df.columns.tolist())
         return df
 
     def unir_con_clima(self, df_accidentes: pd.DataFrame, df_clima: pd.DataFrame) -> pd.DataFrame:
