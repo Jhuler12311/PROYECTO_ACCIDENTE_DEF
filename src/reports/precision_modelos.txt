@@ -1,0 +1,10 @@
+📊 Resultados de entrenamiento:
+
+- Modelo RÁPIDO (HistGradientBoosting): entrenamiento veloz, precisión media reportada en consola.
+- Modelo COMPLETO (GradientBoosting): entrenamiento más lento, mejor precisión esperada.
+
+🔮 Predicciones de ejemplo (entrada fija):
+   • Modelo rápido: Colisión con motocicleta
+   • Modelo completo: Colisión con motocicleta
+
+👉 Ver consola para métricas detalladas.
