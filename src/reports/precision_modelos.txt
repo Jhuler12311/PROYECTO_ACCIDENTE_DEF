@@ -7,4 +7,3 @@
    • Modelo rápido: Colisión con motocicleta
    • Modelo completo: Colisión con motocicleta
 
-👉 Ver consola para métricas detalladas.

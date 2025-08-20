@@ -4,14 +4,14 @@ import pandas as pd
 class ProcesadorEDA:
     def resumen_general(self, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Devuelve un resumen estadístico del dataset.
+        ##Devuelve un resumen estadístico del dataset.
         """
         print("📊 Resumen general del dataset:")
         return df.describe(include="all")
 
     def accidentes_por_provincia(self, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Cuenta la cantidad de accidentes por provincia.
+        ##Cuenta la cantidad de accidentes por provincia.
         """
         if "provincia" not in df.columns:
             print("❌ No se encontró la columna 'provincia'")
@@ -23,7 +23,7 @@ class ProcesadorEDA:
 
     def accidentes_por_hora(self, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Cuenta la cantidad de accidentes por hora del día.
+        ##Cuenta la cantidad de accidentes por hora del día.
         """
         if "hora" not in df.columns:
             print("❌ No se encontró la columna 'hora'")
@@ -35,8 +35,8 @@ class ProcesadorEDA:
 
     def comparar_lluvia(self, df: pd.DataFrame, umbral_mm=1.0) -> pd.DataFrame:
         """
-        Compara cantidad de accidentes en días con lluvia vs sin lluvia.
-        Un día se considera 'con lluvia' si precip_acum >= umbral_mm.
+        ##Compara cantidad de accidentes en días con lluvia vs sin lluvia.
+        ##Un día se considera 'con lluvia' si precip_acum >= umbral_mm.
         """
         if "precip_acum" not in df.columns:
             print("❌ No se encontró la columna 'precip_acum'")

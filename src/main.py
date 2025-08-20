@@ -15,7 +15,7 @@ def main():
 
     # === 2) Cargar CSV de accidentes ===
     csv_path = Path(
-        r"C:\Users\98248\Downloads\PYCHAR\proyecto_accidentes\proyecto_accidentes\data\raw\accidentes_2023.csv"
+        r"C:\Users\98248\Downloads\PYCHAR\proyecto_accidentes\data\raw\accidentes_2023.csv"
     )
 
     if not csv_path.exists():

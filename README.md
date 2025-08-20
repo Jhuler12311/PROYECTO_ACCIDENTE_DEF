@@ -134,6 +134,6 @@ print(f"🔮 Predicción: {pred}")
 
 ---
 
-## ✨ Autores
+## ✨ Autor
 - **Jhuler12311** 👨‍💻  
 *(Proyecto académico – Predicción de Accidentes CR)*
